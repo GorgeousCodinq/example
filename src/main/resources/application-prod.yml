@@ -1,0 +1,7 @@
+server:
+  port: 9091
+
+app:
+  info: this is prod
+  author: xiong
+  email: 972031129@qq.com

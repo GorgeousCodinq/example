@@ -1,0 +1,7 @@
+server:
+  port: 9092
+
+app:
+  info: this is test
+  author: wu
+  email: 666666@qq.com

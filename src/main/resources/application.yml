@@ -1,0 +1,44 @@
+
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+    cache: false
+  profiles:
+    active: prod
+  redis:
+  database: 0
+  host: localhost
+  port: 6379
+  password:
+  timeout: 5000
+  datasource:
+    url: jdbc:mysql://localhost:3306/how2java?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      filters: stat,wall,slf4j,config
+      max-active: 100
+      initial-size: 1
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 'x'
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 50
+      max-pool-prepared-statement-per-connection-size: 20
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: org.wlxy.example.model
+logging:
+  level:
+    org.wlxy.example.dao : debug

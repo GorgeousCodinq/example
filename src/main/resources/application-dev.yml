@@ -1,0 +1,7 @@
+server:
+  port: 9090
+
+app:
+  info: this is dev
+  author: zhong
+  email: 111111111@qq.com
