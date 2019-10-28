@@ -38,7 +38,7 @@ public class ExampleApplication {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello() {
 
-
+//一只可爱的小松鼠
 
 //            throw new MyException(HttpCode.ERROR);
 
